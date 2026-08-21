@@ -1,0 +1,35 @@
+{
+  "name": "genpark-open-source-voice-ai-agent-infrastructure-builder-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Self-hosted, open-source voice AI agent infrastructure builder for inbound/outbound call handling with STT, TTS, and LLM routing.",
+  "author": "genpark",
+  "category": "voice",
+  "tags": [
+    "voice-ai",
+    "open-source",
+    "stt-tts",
+    "inbound-outbound",
+    "dograh"
+  ],
+  "inputs": {
+    "call_type": {
+      "type": "string"
+    },
+    "voice_persona_config": {
+      "type": "object"
+    }
+  },
+  "outputs": {
+    "agent_pipeline_config": {
+      "type": "object"
+    },
+    "estimated_latency_ms": {
+      "type": "integer"
+    },
+    "cost_per_minute_usd": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
